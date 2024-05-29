@@ -66,3 +66,19 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.task-actions{
+  display:none;
+}
+
+.task-input-container:focus .task-actions,
+.task-input-container:focus-within .task-actions{
+  display:flex;
+}
